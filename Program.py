@@ -26,7 +26,7 @@ locais_mundo = [
     ("Quebec", 7000),
 ]
 
-# Classificando-as em ordem decrescente de preço
+# Classificando-as em ordem de preço
 locais_brasil.sort(key=lambda x: x[1], reverse=True)
 locais_mundo.sort(key=lambda x: x[1], reverse=True)
 
@@ -35,6 +35,7 @@ print ("Locais mais caros do Brasil:")
 for i in range(5):
     print(f"{i+1}.{locais_brasil[i][0]} - R${locais_brasil[i][1]:.2f}")
 
+#Imprimindo os cinco locais mais baratos do mundo
 print ("Locais mais baratos do mundo:")
 for i in range(5):
     print(f"{i+1}.{locais_mundo[-(i+1)][0]} - R${locais_mundo[-(i+1)][1]:.2f}")
